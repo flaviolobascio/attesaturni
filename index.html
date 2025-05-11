@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulatore Visore Turni</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulatore Visore Turni</h1>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="alfabeto">Tipo Alfabeto</label>
+                <select id="alfabeto" class="select-box">
+                    <option value="italiano">Italiano</option>
+                    <option value="inglese">Inglese</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="lettera">Lettera</label>
+                <select id="lettera" class="select-box">
+                    <!-- Opzioni generate dinamicamente da JavaScript -->
+                </select>
+            </div>
+        </div>
+        
+        <div class="display">
+            <div id="numero-display"></div>
+        </div>
+        
+        <div class="buttons">
+            <button id="indietro" class="nav-button">
+                <span class="icon">&#10094;</span> Indietro
+            </button>
+            
+            <button id="audio-toggle" class="audio-button">
+                <span class="icon">&#128266;</span>
+            </button>
+            
+            <button id="avanti" class="nav-button">
+                Avanti <span class="icon">&#10095;</span>
+            </button>
+        </div>
+        
+        <p class="note">Audio e sintesi vocale richiedono il supporto del browser.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
